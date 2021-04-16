@@ -3,19 +3,20 @@
 }
 
 .Header-Picture {
-  border-radius: 30%;
+  border-radius: 20%;
   margin-left: 30vmin;
-  margin-right: 15vmin;
+  margin-right: 13vmin;
   height: 200px;
   pointer-events: none;
 }
 
 .Header-Text {
-  margin-left: 15vmin;
+  margin-top: 45px;
+  margin-left: 13vmin;
   margin-right: 30vmin;
   text-align: right;
-  line-height: 1.5em;
-  font-size: 25px;
+  line-height: 1.8em;
+  font-size: 20px;
   font-style: italic;
 }
 
@@ -24,6 +25,15 @@
   font-weight: bold;
   font-size: 30px;
   font-style: normal;
+}
+
+.Header-Links {
+  height: 10px;
+}
+
+.Header-Links-Logo {
+  height: 30px;
+  margin-left: 15px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -48,12 +58,21 @@
 }
 
 .App-body {
-  flex-direction: row;
-  background-color: #282c34ea;
+  flex-direction: column;
+  background-color: #393d44;
   min-height: 100vh;
   padding-top: 20px;
   font-size: 20px;
   color: white;
+  text-align: left;
+  padding-left: 20%;
+  padding-right: 20%;
+  display: flex;
+}
+
+.App-Link {
+  font-style: italic;
+  color: #c1d5f8;
 }
 
 @keyframes App-logo-spin {
