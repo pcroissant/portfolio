@@ -1,6 +1,31 @@
+/* -------------------------  APP */
+
 .App {
   text-align: center;
 }
+
+.App-Link {
+  font-style: italic;
+  color: #c1d5f8;
+}
+
+/* -------------------------  HEADER */
+
+.App-header {
+  background-color: #282c34;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /* min-height: 100vh; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  border-color: white;
+  /* border-width: 5px;
+  border: 1px solid; */
+}
+
 
 .Header-Picture {
   border-radius: 20%;
@@ -36,33 +61,15 @@
   margin-left: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  /* min-height: 100vh; */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-  border-color: white;
-  /* border-width: 5px;
-  border: 1px solid; */
-}
+/* -------------------------  BODY */
 
 .App-body {
   flex-direction: column;
   background-color: #393d44;
   min-height: 100vh;
   padding-top: 20px;
-  font-size: 20px;
+  font-size: 15px;
   color: white;
   text-align: left;
   padding-left: 20%;
@@ -70,16 +77,45 @@
   display: flex;
 }
 
-.App-Link {
-  font-style: italic;
-  color: #c1d5f8;
+.Body-Title {
+  font-size: 22px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Body-Entry {
+  flex-direction: row;
+  display: flex;
+  line-height: 1.2em;
+  margin-bottom: 1%;
+}
+
+.Body-Entry-Title {
+  font-weight: bold;
+}
+
+.Body-Entry-Subtitle {
+  font-style: italic;
+  color: white;
+}
+
+.Body-Entry-Left {
+  /* background-color: #e01616; */
+  flex-direction: row;
+  display: flex;
+  flex: 5;
+}
+
+.Body-Entry-Right {
+  /* background-color: #0bad06; */
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-right: 5%;
+  padding-top: 15px;
+  padding-left: 5%;
+}
+
+.Body-Entry-Link {
+  color: #c1d5f8;
+  margin-left: 4%;
 }
