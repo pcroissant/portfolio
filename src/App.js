@@ -3,7 +3,7 @@ import logo_github from './assets/logo_github.png';
 import logo_linkedin from './assets/logo_linkedin.png';
 import logo_mail from './assets/logo_mail.png';
 
-import { Navbar, Nav, NavLink } from 'reactstrap'
+// import { Navbar, Nav, NavLink } from 'reactstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import * as Icons from "@fortawesome/free-solid-svg-icons"
 
@@ -31,14 +31,14 @@ function App() {
           </p>
         </p>
       </header>
-      <Navbar className="App-navbar">
+      {/* <Navbar className="App-navbar">
           <Nav pills className="mr-auto">
             <NavLink className="Navbar-Link" href="#"><FontAwesomeIcon icon={Icons.faHome} size="1x" /></NavLink>
             <NavLink className="Navbar-Link" href="#formations">Formations</NavLink>
             <NavLink className="Navbar-Link" href="#experiences">Expériences</NavLink>
             <NavLink className="Navbar-Link" href="#wip">Work in progress</NavLink>
           </Nav>
-      </Navbar>
+      </Navbar> */}
       <body className="App-body">
           <h1 name="formations" className="Body-Title"><FontAwesomeIcon icon={Icons.faGraduationCap} size="1x" /> FORMATIONS</h1>
           <ul>
@@ -46,7 +46,7 @@ function App() {
               <div className="Body-Entry-Left">
                 <li>
                   <strong className="Body-Entry-Title">DIPLÔME D’INGÉNIERIE COGNITIQUE (2018 - 2021)</strong><br />
-                  <a href="https://ensc.bordeaux-inp.fr/fr" className="Body-Entry-Subtitle" target="_blank" rel="noreferrer">École Nationale Supérieure de Cognitique</a><br />
+                  <a href="https://ensc.bordeaux-inp.fr/fr" className="Body-Entry-Subtitle" target="_blank" rel="noreferrer">École Nationale Supérieure de Cognitique</a><br /><br />
                   <p>
                     Ingénierie Cognitique : Biologie, Facteurs Humains, UX, KM<br />
                     Sciences Fondamentales : Programmation, Mathématiques, Traitement du Signal/Automatique
@@ -64,7 +64,7 @@ function App() {
               <div className="Body-Entry-Left">
                 <li>
                   <strong className="Body-Entry-Title">LICENCE DE SCIENCES COGNITIVES (2015 - 2018)</strong><br />
-                  <a href="https://www.univ-lyon2.fr/" className="Body-Entry-Subtitle" target="_blank" rel="noreferrer">Université Lumière Lyon II</a><br />
+                  <a href="https://www.univ-lyon2.fr/" className="Body-Entry-Subtitle" target="_blank" rel="noreferrer">Université Lumière Lyon II</a><br /><br />
                   <p>
                     Formation pluridisciplinaire et approfondie sur les disciplines relatives à la cognition humaine, animale et artificielle.
                   </p>
@@ -85,7 +85,7 @@ function App() {
               <div className="Body-Entry-Left">
                 <li>
                   <strong className="Body-Entry-Title">INGÉNIEUR MACHINE LEARNING (2020)</strong><br />
-                  <a href="https://www.wiidii.com/" className="Body-Entry-Subtitle" target="_blank" rel="noreferrer">Wiidii</a><br />
+                  <a href="https://www.wiidii.com/" className="Body-Entry-Subtitle" target="_blank" rel="noreferrer">Wiidii</a><br /><br />
                   <p>
                     Création et maintenance de features dans une architecure en micro-services, gestion de base de données graphe, gestion de datasets, utilisation et fine-tunning de modèle de NLP, développement d'interface web, documentation d'API, tests unitaires, intégration d'une chaine de productionen méthode agile.
                   </p>
@@ -102,7 +102,7 @@ function App() {
               <div className="Body-Entry-Left">
                 <li>
                   <strong className="Body-Entry-Title">UX DESIGNER (2019)</strong><br />
-                  <a href="https://lucine.fr/" className="Body-Entry-Subtitle" target="_blank" rel="noreferrer">Lucine</a><br />
+                  <a href="https://lucine.fr/" className="Body-Entry-Subtitle" target="_blank" rel="noreferrer">Lucine</a><br /><br />
                   <p>
                     Organisation d'atélier de co-idéation, montage vidéo, création de personas, fonctionnement en méthode agile, travail équipe, organisation événementiel.
                   </p>
@@ -117,7 +117,7 @@ function App() {
             </div>
           </ul>
 
-          <h1 name="wip" className="Body-Title"><FontAwesomeIcon icon={Icons.faCogs} size="1x" /> WORK IN PROGRESS</h1>
+          <h1 name="wip" className="Body-Title"><FontAwesomeIcon icon={Icons.faCogs} size="1x" /> WORK IN PROGRESS</h1><br />
 
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac leo molestie nisi gravida facilisis sed at odio. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam nunc justo, fermentum ac vestibulum non, lobortis sed diam. Phasellus efficitur ligula et libero porta blandit eget at massa. In nec sapien placerat, consectetur ante ut, condimentum quam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin ultricies nibh massa, at pulvinar velit molestie et. Ut aliquet ullamcorper sem, ac fringilla enim aliquet eleifend. Pellentesque eu hendrerit magna. Duis ac mi ac felis laoreet porta ac nec orci. Aenean suscipit tortor vel pretium efficitur. Nunc vehicula, quam eget venenatis tristique, mauris diam ultrices ante, ornare tincidunt lacus dui sed sapien. Quisque dapibus lorem eget condimentum porttitor.
